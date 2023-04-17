@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <%- include('./partials/head') %>
 </head>
+
 <body>
-    <h1>REAL TIME WEB</h1>
-    
-    
+  <main>
+    <section>
+      <form>
+        <input type="text" id="username-input" placeholder="Enter your username">
+      </form>
+    </section>
+  
+    <section>
+      <h1>Web Girlies</h1>
+      <ul></ul>
+      <form>
+        <input type="text" id="message-input"autocomplete="off">
+        <button type="submit" id="message-button"><span>Send</span></button>
+      </form>
+    </section>
+  </main>
+
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="/scripts/script.js"></script>
 </body>
+
 </html>
