@@ -7,10 +7,11 @@ const port = process.env.PORT || 4242
 
 app.use(express.static(path.resolve('public')));
 
+// Set view engine
 app.set("views", path.join(__dirname, "views"));
 app.set('view engine', 'ejs');
 
-// Routing bestand
+// Routing file
 let appRoutes = require('./routes/routes');
 app.use('/', appRoutes);
 
