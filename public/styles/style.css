@@ -58,14 +58,14 @@ main {
 /********/
 /* FORM */
 /********/
-main section:nth-child(2) form {
+main section:nth-child(3) form {
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
 }
 
-main section:nth-child(2) ul {
+main section:nth-child(3) ul {
     display: flex;
     flex-direction: column;
 }

@@ -3,6 +3,11 @@ const messages = document.querySelector('section ul')
 const input = document.querySelector('#message-input')
 const submit = document.querySelector('#message-button');
 const usernameInput = document.querySelector('#username-input');
+const time = document.querySelector('#time');
+let date = new Date();
+
+insertDate();
+
 
 submit.addEventListener('click', event => {
     event.preventDefault()
@@ -24,3 +29,8 @@ socket.on('message', message => {
     messages.appendChild(li_element);
     messages.scrollTop = messages.scrollHeight;
 })
+
+function insertDate() {
+   let currentDate = 'Today ' + date.toUTCString().slice(5, 16);
+    time.textContent = currentDate;
+}
