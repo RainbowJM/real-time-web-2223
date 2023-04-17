@@ -12,7 +12,8 @@
   "author": "Keisha , Jevona , Laiba",
   "license": "MIT",
   "dependencies": {
-    "express": "^4.18.2"
+    "express": "^4.18.2",
+    "socket.io": "^2.2.0"
   },
   "devDependencies": {
     "nodemon": "^2.0.22"
