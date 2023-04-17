@@ -7,7 +7,15 @@ For this course we have to develop an chat that receives and gives out data in r
 We have decided to first focus on getting to know socket.io, because it has different kind of events and we are still unfamiliar with the events. So our design will be simple and also we will only be developing 1 page, a really basic chatroom. Where you can chat with multiple users, also the users won't be anonymous, they will be given names. 
 
 ## ✏️ Sketches / design
+
+### Sketch
 ![image 1](https://user-images.githubusercontent.com/94360732/232487129-7857ca76-19d2-41d1-80d1-c9af0ead5c89.png)
+
+### LoFi prototype
+![iPhone 14 - 1](https://user-images.githubusercontent.com/94360732/232489788-bcc8ba8a-e43b-47a3-89cf-1da7c4f038aa.png)
+
+### HiFi prototype
+
 
 ## 🪆 MoSCoW
 
@@ -69,7 +77,23 @@ Start application
 ``` 
 npm start
 ```
-## Real time / Socket.io events ⏰
+
+## 🛣️ Express + route 
+Here we are importing express and building our own route. We are only building an one page application for now, so that's why we will only have one routing path. 
+
+```
+const express = require('express');
+const router = express.Router();
+
+router.get('/', (req, res) => {
+    res.render('index');
+});
+
+
+module.exports = router;
+
+```
+## ⏰ Real time / Socket.io events 
 In real time / Socket.io the events are kind of different than javascript. Here we use specifiek events to receive and send different data.
 
 **.emit**
