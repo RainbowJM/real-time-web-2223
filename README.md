@@ -15,6 +15,7 @@ We have decided to first focus on getting to know socket.io, because it has diff
 ![iPhone 14 - 1](https://user-images.githubusercontent.com/94360732/232489788-bcc8ba8a-e43b-47a3-89cf-1da7c4f038aa.png)
 
 ### HiFi prototype
+![idee 2](https://user-images.githubusercontent.com/94360732/232708768-7459eaa8-663e-42fc-b349-ccda8fb6a5d6.png)
 
 
 ## 🪆 MoSCoW
