@@ -1,5 +1,7 @@
 # Real-Time Web @cmda-minor-web 2022 - 2023
-
+# Individual
+[Make it so!](https://github.com/RainbowJM/real-time-web)
+# Team 
 ## 🏫 Course 
 For this course we have to develop an chat that receives and gives out data in real time (you can see the data immediately). To start off with this course, we are given the assignment to start building an chat application together as a team. So that we have a strong base to start off and then we can add our own functionalities to pass this course. This assignment is quite time restricting, because we start off with this project on Monday and the next day (Tuesday) we have to complete the assignment and receive feedback from the teachers.
 
