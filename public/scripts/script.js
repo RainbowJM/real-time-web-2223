@@ -3,6 +3,7 @@ const messages = document.querySelector('section ul')
 const input = document.querySelector('#message-input')
 const submit = document.querySelector('#message-button');
 const usernameInput = document.querySelector('#username-input');
+const typing = document.querySelector('#typing');
 const time = document.querySelector('#time');
 let date = new Date();
 
@@ -19,7 +20,14 @@ submit.addEventListener('click', event => {
         socket.emit('message', chat)
         input.value = ''
     }
-})
+});
+
+input.addEventListener('click', event => {
+    event.preventDefault();
+    if (input.value) {
+        socket.emit('typing', usernameInput.value);
+    }
+});
 
 socket.on('message', message => {
     const li_element = document.createElement('li');
