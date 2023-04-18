@@ -1,0 +1,157 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark-blue: #01061E;
+    --blue-pink-gradient: linear-gradient(175.66deg, #26B3C7 3.53%, #F19DFF 78.23%);
+    --white: white;
+    --low-opacity-pink: #F0C3F8;
+    --light-pink: #FCF1FB;
+    --low-opacity-white: rgba(255, 255, 255, 0.53);
+
+    /*User colors*/
+    --dark-red: hsla(0, 100%, 29%, 1);
+    --dark-green: #067D68;
+    --blue: #15236D;
+    --text: 'Commissioner', sans-serif;
+    --title: 'Commisioner', sans-serif;
+}
+
+html {
+    width: 100%;
+}
+body {
+    background-image: var(--blue-pink-gradient);
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100vw;
+    font-family: var(--text);
+    font-weight: 400;
+    position: relative;
+}
+
+h1 {
+    font-family: var(--title);
+    font-weight: 700;
+    background-color: var(--low-opacity-white);
+    padding: .5em;
+    text-align: center;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+main {
+    
+    margin: .5em;
+
+}
+/********/
+/* FORM */
+/********/
+main section:nth-child(3) form {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+main section:nth-child(3) ul {
+    display: flex;
+    flex-direction: column;
+}
+
+/*****************/
+/* SPEECH BUBBLE */
+/*****************/
+.talk-bubble {
+    margin: 40px;
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: auto;
+    background-color: var(--light-pink);
+    padding: 1em;
+    box-shadow: 2px 4px rgba(0 0 0/ 0.3)
+}
+
+.border {
+    border-radius: 1em;
+
+}
+
+.tri-right.border.btm-left-in:before {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 30px;
+    right: auto;
+    top: auto;
+    bottom: -40px;
+
+}
+
+.tri-right.btm-left-in:after {
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 0;
+    left: 38px;
+    right: auto;
+    top: auto;
+    bottom: -20px;
+    border: 12px solid;
+    border-color: var(--light-pink) transparent transparent var(--light-pink);
+    filter: drop-shadow(2px 4px rgba(0 0 0/0.3))
+}
+
+/****************/
+/* CHAT INPUT   */
+/****************/
+.message-input {
+    background-color: var(--low-opacity-pink);
+    padding: 2em;
+    display: flex;
+    gap: 2em;
+}
+
+/* input type text */
+#message-input {
+    width: 80%;
+    height: 2em;
+    border: none;
+    border-radius: .5em;
+    background-color: var(--white);
+    font-family: var(--text);
+    font-weight: 400;
+    font-size: 1.2em;
+    padding: 1em;
+}
+
+/*  submit button */
+#message-button {
+  width: 5em; 
+  border: none;
+    border-radius: .5em;
+    background-color: var(--low-opacity-pink);
+    border: 2px solid var(--dark-blue);
+}
+/******************/
+/* RESPONSIVENESS */
+/******************/
+@media (min-width: 40em) {
+    main {
+        margin: 0 auto;
+        width: 75%;
+    }
+}
