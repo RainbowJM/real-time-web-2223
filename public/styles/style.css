@@ -116,6 +116,13 @@ main section:nth-child(3) ul {
 }
 
 /****************/
+/* Time */
+/****************/
+#time {
+    text-align: right;
+}
+
+/****************/
 /* CHAT INPUT   */
 /****************/
 .message-input {
